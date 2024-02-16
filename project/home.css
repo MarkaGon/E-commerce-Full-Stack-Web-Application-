@@ -14,37 +14,35 @@ img {
   float: left;
   margin-right: 1em;
 }
-a[href] {
-  font-family: "Trebuchet MS", "Lucida Grande", sans-serif;
-}
+
 /* unvisited link */
 a:link {
   color: #272932;
 }
 /* mouse over link */
 a:focus, a:hover {
-  color: #828489;
+  color: #58727f;
 }
 /* selected link */
 a:active {
-  color: #5b8bb4;
+  color: #83afa6;
 }
 /* visited link */
 a:visited {
-  color: #9e90a2;
+  color: #e5e5e5;
 }
 body {
-  border: 3px solid #828489;
-  margin: 10px;
+  border: 7px solid #828489;
+  margin: 15px;
 }
 main {
-  border: 2px solid #5b8bb4;
-  width: 850px;
-  margin: 20px;
+  border: 5px solid #5b8bb4;
+  width: 800px;
+  margin: 15px;
   padding: 10px;
 }
 h1, p {
-  border: 1px dashed #9e90a2;
+  border: 1px dashed #d3a284;
   padding: 10px;
 }
 h1, h2 {
