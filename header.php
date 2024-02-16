@@ -1,7 +1,8 @@
 <header>
-    <img src="logo2.ppj" alt= "SipAndSavor" width="58" />
+    <img src="logo2.png" alt= "SipAndSavor" width="58" />
 
-     <h1 style="color: #272932; background-color: #828489;">
+     <h1 style="color: #e5e5e5; background-color:#58727f ;">
      SipAndSavor </h1>
-     <h2>Shipping</h2>
+     <a href="ship.php" target="_blank"><h3>Shipping</h3></a>
+     <br>
 </header>
