@@ -10,6 +10,37 @@ h1, h2, body {
 .details {
   background-color: #e5e5e5;
 }
+.kettle{
+  border: 5px solid #d3a284;
+  width: 150px;
+  right: 15px;
+  padding: 0px;
+  float: left;
+}
+.grind{
+  border: 5px solid #d3a284;
+  width: 150px;
+  right: 15px;
+  padding: 0px;
+  float: left;
+}
+.carbon{
+  border: 5px solid #5b8bb4;
+  width: 150px;
+  margin: 10px;
+  padding: 0px;
+  float: left;
+}
+
+.press{
+  border: 5px solid #d3a284;
+  width: 200px;
+  right: 15px;
+  
+  padding: 0px;
+  float: left;
+}
+
 img {
   float: left;
   margin-right: 1em;
