@@ -72,6 +72,13 @@ main {
   margin: 15px;
   padding: 10px;
 }
+form{
+  border: 5px solid #5b8bb4;
+  width: 800px;
+  margin: 15px;
+  padding: 10px;
+
+}
 h1, p {
   border: 1px dashed #d3a284;
   padding: 10px;
