@@ -42,25 +42,26 @@ if(!isset($declared_value)) { $declared_value = ''; }
             <input type ="text" name = "state" value = "<?php echo htmlspecialchars($state); ?>"/> <br>
             
             <label>Zipcode:</label>
-            <input type ="number" name = "zipcode" value = "<?php echo htmlspecialchars($zipcode); ?>"/> <br>
+            <input type ="number" name = "zipcode" min="10000" max="99999" value = "<?php echo htmlspecialchars($zipcode); ?>"/> <br>
             
             <h3>Package Details</h3>
             <label>Order Number:</label>
             <input type ="number" name = "order_number" value = "<?php echo htmlspecialchars($order_number); ?>"/><br>
             
             <label>Dimensions: Length</label>
-            <input type ="number" name = "length" value = "<?php echo htmlspecialchars($length); ?>"/> 
+            <input type ="number" name = "length" max="36" value = "<?php echo htmlspecialchars($length); ?>"/> 
             <label>Width</label>
-            <input type ="number" name = "width" value = "<?php echo htmlspecialchars($width); ?>"/> 
+            <input type ="number" name = "width" max="36"  value = "<?php echo htmlspecialchars($width); ?>"/> 
             <label>Height</label>
-            <input type ="number" name = "height" value = "<?php echo htmlspecialchars($height); ?>"/> <br>
+            <input type ="number" name = "height" max="36" value = "<?php echo htmlspecialchars($height); ?>"/> <br>
             
             <label>Declared Value:</label>
-            <input type ="number" name = "declared_value" value = "<?php echo htmlspecialchars($declared_value); ?>"/><br>
+            <input type ="number" name = "declared_value" max="1000" value = "<?php echo htmlspecialchars($declared_value); ?>"/><br>
             <label>Ship Date:</label>
             <input type ="date" name = "ship_date" value = "<?php echo htmlspecialchars($ship_date); ?>"/><br>
             <input type="submit" value="Submit">
         <form>
     </main>
+    <?php include('footer.php'); ?>
 </body>
 </html>
