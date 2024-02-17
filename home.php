@@ -1,3 +1,4 @@
+<!--Mark Goncalves, 2/16/2024, IT202002, Phase1, mag@njit.edu -->
 <html>
     <head>
         <title>SipAndSavor</title>
@@ -24,7 +25,7 @@
             <img class="carbon" src="images/cn.png" alt="Carbon Neutral"/>
         </main>
         <?php include('footer.php'); ?>
-        <h4>
+        <h4>  
         <img class="kettle" src="images/eket.png" alt="Eletric Kettle"/>
         <img class="press" src="images/fpress.jpg" alt="French Press"/>
         <img class="grind" src="images/grinder.jpg" alt="grinder"/>

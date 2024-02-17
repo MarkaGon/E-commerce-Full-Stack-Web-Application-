@@ -1,3 +1,4 @@
+<!--Mark Goncalves, 2/16/2024, IT202002, Phase1, mag@njit.edu -->
 <header>
     <img src="images/logo2.png" alt= "SipAndSavor Logo" width="58" />
     <h1 style="color: #e5e5e5; background-color:#58727f ;">

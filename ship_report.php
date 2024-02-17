@@ -1,4 +1,5 @@
-<?php
+
+<?php //Mark Goncalves, 2/16/2024, IT202002, Phase1, mag@njit.edu
 echo '<link rel="stylesheet" href="home.css"/>';
 // Retrieve form data
 $first_name = filter_input(INPUT_POST, 'first_name');
@@ -25,10 +26,6 @@ if ($declared_value >  1000) {
     exit;
 }
 
-
-
-
-// If validation passes, display the report
 
 // Display the report
 echo "<h2>Shipping Report</h2>";
