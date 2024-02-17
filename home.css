@@ -1,96 +1,90 @@
 h1, h2, body {
-    font-family: Times New Roman, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #83afa6;
+  font-family: Times New Roman, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #83afa6;
 }
 
 /* Slide 8/9 */
 #first {
-  background-color: #5b8bb4;
+background-color: #5b8bb4;
 }
 .details {
-  background-color: #e5e5e5;
+background-color: #e5e5e5;
 }
 .kettle{
-  border: 5px solid #d3a284;
-  width: 150px;
-  right: 15px;
-  padding: 0px;
-  float: left;
+border: 5px solid #d3a284;
+width: 150px;
+right: 15px;
+padding: 0px;
+float: left;
 }
 .grind{
-  border: 5px solid #d3a284;
-  width: 150px;
-  right: 15px;
-  padding: 0px;
-  float: left;
+border: 5px solid #d3a284;
+width: 150px;
+right: 15px;
+padding: 0px;
+float: left;
 }
 .carbon{
-  border: 5px solid #5b8bb4;
-  width: 150px;
-  margin: 10px;
-  padding: 0px;
-  float: left;
+border: 5px solid #5b8bb4;
+width: 150px;
+margin: 10px;
+padding: 0px;
+float: left;
 }
 
 .press{
-  border: 5px solid #d3a284;
-  width: 200px;
-  right: 15px;
-  
-  padding: 0px;
-  float: left;
+border: 5px solid #d3a284;
+width: 200px;
+right: 15px;
+
+padding: 0px;
+float: left;
 }
 
 img {
-  float: left;
-  margin-right: 1em;
+float: left;
+margin-right: 1em;
 }
 
 /* unvisited link */
 a:link {
-  color: #272932;
+color: #272932;
 }
 /* mouse over link */
 a:focus, a:hover {
-  color: #58727f;
+color: #58727f;
 }
 /* selected link */
 a:active {
-  color: #83afa6;
+color: #83afa6;
 }
 /* visited link */
 a:visited {
-  color: #e5e5e5;
+color: #e5e5e5;
 }
 body {
-  border: 7px solid #828489;
-  margin: 15px;
+border: 7px solid #828489;
+margin: 15px;
 }
 main {
-  border: 5px solid #5b8bb4;
-  width: 800px;
-  margin: 15px;
-  padding: 10px;
+border: 5px solid #5b8bb4;
+width: 800px;
+margin: 15px;
+padding: 10px;
 }
-form{
-  border: 5px solid #5b8bb4;
-  width: 800px;
-  margin: 15px;
-  padding: 10px;
 
-}
 h1, p {
-  border: 1px dashed #d3a284;
-  padding: 10px;
+border: 1px dashed #d3a284;
+padding: 10px;
 }
 h1, h2 {
-  margin: .5em 0 .25em;
-  padding-left: 15px;
+margin: .5em 0 .25em;
+padding-left: 15px;
 }
 p {
-  margin: 0;
-  width: 725px;
-  padding-left: 15px;
+margin: 0;
+width: 725px;
+padding-left: 15px;
 }
 
 
