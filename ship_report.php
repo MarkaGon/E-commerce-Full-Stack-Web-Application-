@@ -29,13 +29,13 @@ if ($declared_value >  1000) {
 
 // Display the report
 echo "<h2>Shipping Report</h2>";
-echo "From Address:  Coffee and Tea Ave<br>";
+echo "From Address:  Martin St, Hoboken, NJ, 02021<br>";
 echo "Recipient:  $first_name $last_name<br>";
 echo "To Address: $address, $city, $state, $zipcode<br>";
 echo "Package Dimensions:  $length x $width x $height <br>";
 echo "Declared Value: $$declared_value<br>";
 echo "Shipping Company:  UPS<br>";
-echo "Shipping Class:  UPS Premium<br>";
+echo "Shipping Class:  Next Day Air<br>";
 echo "Tracking Number:   123456789<br>";
 echo "Order Number:  $order_number<br>";
 echo "Ship Date:  $ship_date<br>"; 

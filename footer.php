@@ -21,7 +21,9 @@
 
 <footer>
     <h5>
-        <p>Mark Goncalves, 2/16/2024, It-202-002, <a href="mag@njit.edu">
+        
+        <p>Address: SipAndSavor Martin St, Hoboken, NJ, 02021 <br>
+            Mark Goncalves, 2/16/2024, It-202-002, <a href="mag@njit.edu">
            mag@njit.edu </a>
         </p>
     </h5>
