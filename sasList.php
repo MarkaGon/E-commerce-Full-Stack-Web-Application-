@@ -1,3 +1,4 @@
+<!--Mark Goncalves, 3/1/2024, IT202002, Phase1, mag@njit.edu -->
 <?php
 require_once('database_njit.php');
 
