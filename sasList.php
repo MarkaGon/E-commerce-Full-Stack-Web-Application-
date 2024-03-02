@@ -68,7 +68,6 @@ $statement3->closeCursor();
 </head>
 <body>      
 <main>
-    <h1>Product List</h1>
     <aside>
         <!-- Display a list of categories -->
         <h2>Categories</h2>
@@ -94,8 +93,8 @@ $statement3->closeCursor();
                     <th>Code</th>
                     <th>Name</th>
                     <th>Description</th>
+                    <th>Size</th>
                     <th>Price</th>
-                    <th> </th>
                 </tr>
             </thead>
             <tbody>
@@ -104,14 +103,8 @@ $statement3->closeCursor();
                         <td><?php echo $product['SipAndSavorCode']; ?></td>
                         <td><?php echo $product['SipAndSavorName']; ?></td>
                         <td><?php echo $product['description']; ?></td>
+                        <td><?php echo $product['SipAndSavorSize']; ?></td>
                         <td><?php echo $product['price']; ?></td>
-                        <td>
-                            <form>
-                                <input type="hidden" name="product_id" value="<?php echo $product['SipAndSavorID']; ?>" />
-                                <input type="hidden" name="category_id" value="<?php echo $product['SipAndSavorCategoryID']; ?>" />
-                                <!-- Add buttons or actions here -->
-                            </form>
-                        </td>
                     </tr>
                 <?php endforeach; ?>      
             </tbody>

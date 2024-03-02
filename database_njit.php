@@ -1,3 +1,4 @@
+<!--Mark Goncalves, 3/1/2024, IT202002, Phase1, mag@njit.edu -->
 <?php
   // Slide 24 (sort of)
   $dsn = 'mysql:host=sql1.njit.edu;port=3306;dbname=mag';

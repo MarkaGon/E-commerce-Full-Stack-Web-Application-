@@ -4,7 +4,7 @@
         body {
             margin: 0;
             padding: 0;
-            min-height: 100vh;
+            min-height: 140vh;
             position: relative;
         }
 
@@ -22,7 +22,7 @@
 <footer>
     <h5>
         
-        <p>Address: SipAndSavor Martin St, Hoboken, NJ, 02021 <br>
+        <p>Address: SipAndSavor Martin St, Hoboken, NJ, 02021 
             Mark Goncalves, 2/16/2024, It-202-002, <a href="mag@njit.edu">
            mag@njit.edu </a>
         </p>
