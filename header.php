@@ -8,5 +8,6 @@
         <a href="home.php">Home</a>
         <a href="ship.php">Shipping</a>
         <a href="sasList.php">Inventory</a>
+        <a href="create_page.php">Create</a>
     </nav>
 </header>
