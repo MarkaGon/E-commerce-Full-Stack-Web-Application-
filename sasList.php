@@ -1,6 +1,7 @@
-<!--Mark Goncalves, 3/1/2024, IT202002, Phase1, mag@njit.edu -->
+<!--Mark Goncalves, 4/5/2024, IT202002, Phase4, mag@njit.edu -->
 <?php
 require_once('database_njit.php');
+session_start();
 
 $db = getDatabase();
 
@@ -39,10 +40,10 @@ $products = $statement3->fetchAll();
 $statement3->closeCursor();
 ?>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>SipAndSavor</title>
+    <!-- Styles -->
     <style>
         /* Styles for table and body */
         body {
@@ -98,6 +99,10 @@ $statement3->closeCursor();
                     <th>Description</th>
                     <th>Size</th>
                     <th>Price</th>
+                    <!-- Display delete column for admin -->
+                    <?php if (isset($_SESSION['is_valid_admin'])) : ?>
+                    <th>Delete</th>
+                    <?php endif; ?>
                 </tr>
             </thead>
             <tbody>
@@ -108,6 +113,16 @@ $statement3->closeCursor();
                         <td><?php echo $product['description']; ?></td>
                         <td><?php echo $product['SipAndSavorSize']; ?></td>
                         <td><?php echo $product['price']; ?></td>
+                        <!-- Display delete button for admin -->
+                        <?php if (isset($_SESSION['is_valid_admin'])) : ?>
+                        <td>
+                            <form action="delete_items.php" method="post">
+                                <input type="hidden" name="product_id" value="<?php echo $product['SipAndSavorID']; ?>">
+                                <input type="hidden" name="category_id" value="<?php echo $product['SipAndSavorCategoryID']; ?>">
+                                <input type="submit" value="Delete">
+                            </form>
+                        </td>
+                        <?php endif; ?>
                     </tr>
                 <?php endforeach; ?>      
             </tbody>
@@ -116,4 +131,5 @@ $statement3->closeCursor();
 </main>
 </body>
 </html>
+
 

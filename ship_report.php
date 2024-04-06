@@ -1,5 +1,5 @@
 
-<?php //Mark Goncalves, 2/16/2024, IT202002, Phase1, mag@njit.edu
+<?php //Mark Goncalves, 4/5/2024, IT202002, Phase4, mag@njit.edu
 echo '<link rel="stylesheet" href="home.css"/>';
 // Retrieve form data
 $first_name = filter_input(INPUT_POST, 'first_name');

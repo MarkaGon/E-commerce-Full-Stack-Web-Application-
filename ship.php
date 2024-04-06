@@ -1,5 +1,7 @@
 
-<?php //Mark Goncalves, 2/16/2024, IT202002, Phase1, mag@njit.edu
+<?php
+ //Mark Goncalves, 4/5/2024, IT202002, Phase4, mag@njit.edu
+session_start();
 //initalizing values for the variables
 if(!isset($first_name)) { $first_name = ''; }
 if(!isset($last_name)) { $last_name = ''; }

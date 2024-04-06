@@ -1,9 +1,9 @@
 <?php
-//Mark Goncalves, 3/22/2024, IT202002, Phase3, mag@njit.edu
+//Mark Goncalves, 4/5/2024, IT202002, Phase4, mag@njit.edu
+
 require_once('database_njit.php');
-
+session_start();
 $db = getDatabase();
-
 //query for categories
 $query = 'SELECT * FROM SipAndSavorCategories ORDER BY SipAndSavorCategoryID';
 
@@ -11,18 +11,7 @@ $statement = $db->prepare($query);
 $statement->execute();
 $categories = $statement->fetchAll();
 $statement->closeCursor();
-
-//making sure they are a manager 
-session_start();
-    // Check if the user is logged in
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    // redirect them if not logged ins
-    header("Location:login.php");
-    exit();
-  }
 ?>
-
-
 
 <html>
     <head>

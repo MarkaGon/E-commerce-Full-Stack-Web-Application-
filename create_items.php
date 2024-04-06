@@ -1,6 +1,9 @@
 <?php
-//Mark Goncalves, 3/22/2024, IT202002, Phase3, mag@njit.edu
+//Mark Goncalves, 4/5/2024, IT202002, Phase4, mag@njit.edu
 // get the product data
+require_once('database_njit.php');
+$db = getDatabase();
+
 $SipAndSavorCategoryID = filter_input(INPUT_POST, 'SipAndSavorCategoryID', FILTER_VALIDATE_INT);
 $SipAndSavorCode = filter_input(INPUT_POST, 'SipAndSavorCode');
 $SipAndSavorName = filter_input(INPUT_POST, 'SipAndSavorName');

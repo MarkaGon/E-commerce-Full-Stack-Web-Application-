@@ -1,4 +1,4 @@
-<!--Mark Goncalves, 3/1/2024, IT202002, Phase1, mag@njit.edu -->
+<!--Mark Goncalves, 4/5/2024, IT202002, Phase4, mag@njit.edu -->
 <?php
   // Slide 24 (sort of)
   function getDatabase(){
