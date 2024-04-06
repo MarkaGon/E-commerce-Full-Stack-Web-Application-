@@ -2,6 +2,8 @@
 <?php
 require_once('database_njit.php');
 
+$db = getDatabase();
+
 // Get category ID
 $category_id = filter_input(INPUT_GET, 'category_id', FILTER_VALIDATE_INT);
 if ($category_id == NULL || $category_id == FALSE) {
