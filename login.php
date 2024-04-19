@@ -1,4 +1,5 @@
 <?php 
+//Mark Goncalves, 4/19/2024, IT202002, Phase5, mag@njit.edu
 if (!isset($login_message)) {
   $login_message = 'You must login to view this page.';
 }

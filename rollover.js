@@ -1,5 +1,6 @@
 $(document).ready( () => {
-
+    //Mark Goncalves, 4/19/2024, IT202002, Phase5, mag@njit.edu
+    //taken from jschapter08
     // process each img tag
     $("#image_rollovers img").each( (index, img) => {
    

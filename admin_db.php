@@ -1,7 +1,7 @@
 <?php
 require_once('database_njit.php');
 
-// Mark Goncalves, 4/5/2024, IT202002, Phase4, mag@njit.edu
+// Mark Goncalves, 4/19/2024, IT202002, Phase5, mag@njit.edu
 // Slide 17
 function is_valid_admin_login($email, $password) {
     // Get database connection
