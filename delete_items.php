@@ -21,11 +21,14 @@ if ($product_id !== false) {
     // Check if deletion was successful and provide appropriate feedback
     if ($success) {
         echo "<p>Product deleted successfully.</p>";
+        include('sasList.php');
     } else {
         echo "<p>Failed to delete product.</p>";
+        include('sasList.php');
     }
 } else {
     // Invalid product ID
     echo "<p>Invalid product ID.</p>";
+    include('sasList.php');
 }
 ?>

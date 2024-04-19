@@ -119,7 +119,8 @@ $statement3->closeCursor();
                             <form action="delete_items.php" method="post">
                                 <input type="hidden" name="product_id" value="<?php echo $product['SipAndSavorID']; ?>">
                                 <input type="hidden" name="category_id" value="<?php echo $product['SipAndSavorCategoryID']; ?>">
-                                <input type="submit" value="Delete">
+                                <!--Confirm delete -->
+                                <input type="submit" value="Delete" onclick="return confirm('Confirm Removal')">
                             </form>
                         </td>
                         <?php endif; ?>
