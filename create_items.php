@@ -39,4 +39,83 @@ if ($SipAndSavorCategoryID == NULL || $SipAndSavorCategoryID == FALSE || $SipAnd
 }
 ?>
 
+<script>
+// Function to validate the Code field
+function validateCode() {
+    var code = document.getElementById('SipAndSavorCode').value;
+    var errorSpan = document.getElementById('SipAndSavorCode-error');
+    if (code.length < 4 || code.length > 10) {
+        errorSpan.textContent = 'Code must be between 4 and 10 characters.';
+        return false;
+    } else {
+        errorSpan.textContent = '';
+        return true;
+    }
+}
+
+// Function to validate the Name field
+function validateName() {
+    var name = document.getElementById('SipAndSavorName').value;
+    var errorSpan = document.getElementById('SipAndSavorName-error');
+    if (name.length < 10 || name.length > 100) {
+        errorSpan.textContent = 'Name must be between 10 and 100 characters.';
+        return false;
+    } else {
+        errorSpan.textContent = '';
+        return true;
+    }
+}
+
+// Function to validate the Description field
+function validateDescription() {
+    var description = document.getElementById('description').value;
+    var errorSpan = document.getElementById('SipAndSavor-description-error');
+    if (description.length < 10 || description.length > 255) {
+        errorSpan.textContent = 'Description must be between 10 and 255 characters.';
+        return false;
+    } else {
+        errorSpan.textContent = '';
+        return true;
+    }
+}
+
+// Function to validate the Price field
+function validatePrice() {
+    var price = document.getElementById('price').value;
+    var errorSpan = document.getElementById('SipAndSavor-price-error');
+    var priceVal = parseFloat(price);
+    if (isNaN(priceVal) || priceVal <= 0 || priceVal > 100000) {
+        errorSpan.textContent = 'Price must be a positive number less than or equal to $100,000.';
+        return false;
+    } else {
+        errorSpan.textContent = '';
+        return true;
+    }
+}
+
+// Function to validate the entire form on submission
+function validateForm(event) {
+    var isValid = true;
+    
+    isValid &= validateCode();
+    isValid &= validateName();
+    isValid &= validateDescription();
+    isValid &= validatePrice();
+    
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission if any field is invalid
+    }
+}
+
+// Add event listeners to form fields for real-time validation
+document.getElementById('SipAndSavorCode').addEventListener('input', validateCode);
+document.getElementById('SipAndSavorName').addEventListener('input', validateName);
+document.getElementById('description').addEventListener('input', validateDescription);
+document.getElementById('price').addEventListener('input', validatePrice);
+
+// Add form submission event listener for final validation
+document.getElementById('create-form').addEventListener('submit', validateForm);
+</script>
+
+
 

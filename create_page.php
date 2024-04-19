@@ -67,5 +67,91 @@ $statement->closeCursor();
             </form>
         </main>
         <?php include('footer.php'); ?>
+
+        <!-- js page field validation  -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Function to validate the Code field
+                function validateCode() {
+                    var code = document.getElementById('SipAndSavorCode').value;
+                    var errorSpan = document.getElementById('SipAndSavorCode-error');
+                    if (code === '' || code.length < 4 || code.length > 10) {
+                        errorSpan.textContent = 'Field must be 4-10 characters long and not blank.';
+                        return false;
+                    } else {
+                        errorSpan.textContent = '';
+                        return true;
+                    }
+                }
+
+                // Function to validate the Name field
+                function validateName() {
+                    var name = document.getElementById('SipAndSavorName').value;
+                    var errorSpan = document.getElementById('SipAndSavorName-error');
+                    if (name === '' || name.length < 10 || name.length > 100) {
+                        errorSpan.textContent = 'Field must be 10-100 characters long and not blank.';
+                        return false;
+                    } else {
+                        errorSpan.textContent = '';
+                        return true;
+                    }
+                }
+
+                // Function to validate the Description field
+                function validateDescription() {
+                    var description = document.getElementById('description').value;
+                    var errorSpan = document.getElementById('SipAndSavor-description-error');
+                    if (description === '' || description.length < 10 || description.length > 255) {
+                        errorSpan.textContent = 'Field must be 10-255 characters long and not blank.';
+                        return false;
+                    } else {
+                        errorSpan.textContent = '';
+                        return true;
+                    }
+                }
+
+                // Function to validate the SipAndSavorSize field
+                function validateSize() {
+                    var size = document.getElementById('SipAndSavorSize').value;
+                    var errorSpan = document.getElementById('SipAndSavorSize-error');
+                    var validSizes = ['Small', 'Medium', 'Large'];
+                    if (size === '' || !validSizes.includes(size)) {
+                        errorSpan.textContent = 'Field must be either Small, Medium, or Large.';
+                        return false;
+                    } else {
+                        errorSpan.textContent = '';
+                        return true;
+                    }
+                }
+
+                // Function to validate the Price field
+                function validatePrice() {
+                    var price = document.getElementById('price').value;
+                    var errorSpan = document.getElementById('SipAndSavor-price-error');
+                    if (price === '' || price <= 0 || price > 100000) {
+                        errorSpan.textContent = 'Field must be between $1 and $100,000.';
+                        return false;
+                    } else {
+                        errorSpan.textContent = '';
+                        return true;
+                    }
+                }
+
+                // Attach event listeners to the input fields
+                document.getElementById('SipAndSavorCode').addEventListener('input', validateCode);
+                document.getElementById('SipAndSavorName').addEventListener('input', validateName);
+                document.getElementById('description').addEventListener('input', validateDescription);
+                document.getElementById('SipAndSavorSize').addEventListener('input', validateSize);
+                document.getElementById('price').addEventListener('input', validatePrice);
+
+                // Attach event listener to the form submit event
+                document.getElementById('create-form').addEventListener('submit', function(event) {
+                    if (!validateCode() || !validateName() || !validateDescription() || !validatePrice() || !validateSize()) {
+                        event.preventDefault(); // Prevent form submission if validation fails
+                    }
+                });
+            });
+        </script>
+        
     </body>
 </html>
