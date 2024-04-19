@@ -64,11 +64,28 @@ $statement->closeCursor();
                     <span id="SipAndSavor-price-error" class="text-danger"></span>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
+                <!--Reset button -->
+                <button type="button" onclick="resetForm()" class="btn btn-secondary">Reset</button>
             </form>
         </main>
         <?php include('footer.php'); ?>
 
-        <!-- js page field validation  -->
+        <!--Reset button JS -->
+        <script> 
+        function resetForm() {
+            // Clear all form fields
+            document.getElementById('create-form').reset();
+
+            // Clear all error messages
+            var errorMessages = document.querySelectorAll(".text-danger");
+            errorMessages.forEach(function(errorMessage) {
+                errorMessage.innerHTML = '';
+            });
+        }
+
+        </script>
+
+        <!-- js page field validation and reset button  -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 // Function to validate the Code field
@@ -152,6 +169,6 @@ $statement->closeCursor();
                 });
             });
         </script>
-        
+
     </body>
 </html>
