@@ -108,7 +108,8 @@ $statement3->closeCursor();
             <tbody>
                 <?php foreach ($products as $product) : ?>
                     <tr>
-                        <td><?php echo $product['SipAndSavorCode']; ?></td>
+                    <td><a href="details.php?code=<?php echo urlencode($product['SipAndSavorCode']); ?>
+                    "><?php echo $product['SipAndSavorCode']; ?></a></td>
                         <td><?php echo $product['SipAndSavorName']; ?></td>
                         <td><?php echo $product['description']; ?></td>
                         <td><?php echo $product['SipAndSavorSize']; ?></td>
