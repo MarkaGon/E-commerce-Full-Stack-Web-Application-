@@ -34,6 +34,8 @@ if (!$product) {
 <head>
     <link rel="stylesheet" href="home.css"/>    
     <title>Product Details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="rollover.js"></script>
 </head>
 <body>
     <h2><?php echo $product['SipAndSavorName']; ?></h2>
@@ -42,9 +44,9 @@ if (!$product) {
     <p>Size: <?php echo $product['SipAndSavorSize']; ?></p>
     <p>Price: <?php echo $product['price']; ?></p>
     <!-- Display product image if available -->
-    <img src="images/<?php echo $product['SipAndSavorCode']; ?>.jpeg" alt="<?php echo $product['SipAndSavorName']; ?>"
-     width="305" height="305" style="display: block; margin: 0 auto; padding: 10px;">
+    <div id="image_rollovers">
+        <img src="images/<?php echo $product['SipAndSavorCode']; ?>.jpeg" alt="<?php echo $product['SipAndSavorName']; ?>"
+         width="305" height="305" style="display: block; margin: 0 auto; padding: 10px;">
+    </div>
 </body>
 </html>
-
-
