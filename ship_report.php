@@ -1,6 +1,11 @@
 
-<?php //Mark Goncalves, 4/19/2024, IT202002, Phase5, mag@njit.edu
+<?php 
+//Mark Goncalves, 4/19/2024, IT202002, Phase5, mag@njit.edu
+session_start();
 echo '<link rel="stylesheet" href="home.css"/>';
+include ('header.php'); 
+include('footer.php');
+
 // Retrieve form data
 $first_name = filter_input(INPUT_POST, 'first_name');
 $last_name = filter_input(INPUT_POST, 'last_name');
@@ -28,7 +33,7 @@ if ($declared_value >  1000) {
 
 
 // Display the report
-echo "<h2>Shipping Report</h2>";
+echo "<h1>Shipping Report</h1>";
 echo "From Address:  Martin St, Hoboken, NJ, 02021<br>";
 echo "Recipient:  $first_name $last_name<br>";
 echo "To Address: $address, $city, $state, $zipcode<br>";
