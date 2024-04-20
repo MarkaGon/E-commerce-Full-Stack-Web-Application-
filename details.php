@@ -4,6 +4,9 @@ require_once('database_njit.php');
 $db = getDatabase();
 session_start();
 
+if (isset($_SESSION['is_valid_admin']) && $_SESSION['is_valid_admin']) {
+    echo "<p>Welcome, " . $_SESSION['name'] . "</p>";
+}
 include ('header.php');
 include('footer.php');
 
@@ -42,7 +45,7 @@ $statement->closeCursor();
         <p>Description: <?php echo $product['description']; ?></p>
         <p>Size: <?php echo $product['SipAndSavorSize']; ?></p>
         <p>Price: <?php echo $product['price']; ?></p>
-        
+
         <!-- Display product image if available -->
         <div id="image_rollovers">
             <img src="images/<?php echo $product['SipAndSavorCode']; ?>.jpeg" alt="<?php echo $product['SipAndSavorName']; ?>"

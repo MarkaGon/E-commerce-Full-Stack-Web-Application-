@@ -8,7 +8,7 @@ if (!isset($_SESSION['is_valid_admin']) || $_SESSION['is_valid_admin'] !== true)
     // Redirect to the login page if not logged in
     header('Location: login.php');
     exit();
-} 
+}
 
 $db = getDatabase();
 //query for categories

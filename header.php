@@ -7,7 +7,8 @@
     <nav>
     <?php
             // Check if the user is a valid admin
-            if (isset($_SESSION['is_valid_admin'])) { 
+            if (isset($_SESSION['is_valid_admin']) && $_SESSION['is_valid_admin']) { 
+                echo "<p>Welcome, " . $_SESSION['name'] . "</p>";
         ?>
             <!-- Admin links -->
             <a href="home.php">Home</a>
