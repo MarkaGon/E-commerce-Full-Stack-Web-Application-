@@ -121,7 +121,7 @@ $statement3->closeCursor();
                                 <input type="hidden" name="product_id" value="<?php echo $product['SipAndSavorID']; ?>">
                                 <input type="hidden" name="category_id" value="<?php echo $product['SipAndSavorCategoryID']; ?>">
                                 <!--Confirm delete -->
-                                <input type="submit" value="Delete" onclick="return confirm('Confirm Removal')">
+                                <input type="submit" value="Delete" onclick="return confirm('Are you Sure?')">
                             </form>
                         </td>
                         <?php endif; ?>
