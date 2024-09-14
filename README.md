@@ -1,2 +1,2 @@
-# IT202-MAG-Project
+# E-commerce Full Stack Web Application 
  
